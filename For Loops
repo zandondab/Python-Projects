@@ -1,0 +1,23 @@
+#Modifying a for loop program so that it prints "Ouack" and "Quack" but leaves the other names the same. Solution:
+
+i= 0     #declaring new variable i to store indices as program traverses the string
+prefixes = 'JKLMNOPQ'  #creating variable to store string
+suffix = 'ack'          #another variable that will be concartneted to the prefixes as the loop iterates
+for letter in prefixes:     #loop to traverse the string
+    if (letter[i] == 'O'):      #condition to single out letter of interest, O 
+        print ('Ou' + suffix)
+    elif (letter[i] == 'Q'):
+        print ('Qu' + suffix)   #setting the program to output the desired output for suffix Q
+    else:			#letting every other outcome come out the same
+        print(letter + suffix)
+
+
+#Output: 
+Jack
+Kack
+Lack
+Mack
+Nack
+Ouack
+Pack
+Quack
