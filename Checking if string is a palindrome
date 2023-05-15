@@ -1,0 +1,12 @@
+def palindrome(s):  #declaring function that takes in string argument
+    left = 0        #creating variable to store left characters as loop traverses string
+    right = len(s) - 1  #variable to store characters from right as loop traverses string
+    while left <= right:
+        if s[left]== s[right]:
+            print(s[left])  #using print function to test output
+            left = left + 1
+            right = right -1
+        else:
+            print('string not palindrome')
+            return False 
+palindrome('KayaK')
